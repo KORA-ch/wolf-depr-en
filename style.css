@@ -62,7 +62,7 @@ body {
 }
 
 .slider::-webkit-slider-thumb:hover {
-    background: #0056b3; /* Darker blue on hover */
+    background: #b3b3b3; /* Darker blue on hover */
 }
 
 /* Firefox */
@@ -82,5 +82,5 @@ body {
 }
 
 .slider::-moz-range-thumb:hover {
-    background: #0056b3; /* Darker blue on hover */
+    background: #b3b3b3; /* Darker blue on hover */
 }
