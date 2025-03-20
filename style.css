@@ -1,5 +1,5 @@
 body {
-    font-family: 'Aptos', 'Helvetica', serif;
+    font-family: 'Aptos', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,17 +29,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff; /* Ensure the slider container has a white background */
 }
 
 .slider {
     width: 60%; /* Adjust the width of the slider to fit better */
+    background-color: #ffffff; /* Ensure the slider itself has a white background */
 }
 
 .year-display {
     margin-left: 10px;
     font-size: 1.2em;
+    background-color: #ffffff; /* Ensure the year display has a white background */
 }
-
 
 /* WebKit-based browsers (Chrome, Safari, etc.) */
 .slider::-webkit-slider-runnable-track {
