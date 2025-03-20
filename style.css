@@ -13,8 +13,8 @@ body {
     width: 100%; /* Adjust the width as needed */
     max-width: 800px; /* Maximum width for the container */
     background-color: #ffffff; /* Ensure the background is white */
-    padding: 20px; /* Add padding to create space around the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    padding: 0px; /* Add padding to create space around the content */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
     border-radius: 8px; /* Optional: Rounds the corners */
 }
 
