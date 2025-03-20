@@ -39,3 +39,46 @@ body {
     margin-left: 10px;
     font-size: 1.2em;
 }
+
+
+/* WebKit-based browsers (Chrome, Safari, etc.) */
+.slider::-webkit-slider-runnable-track {
+    height: 3px; /* Thin track */
+    background: #e0e0e0; /* Light gray track color */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none; /* Standard syntax */
+    width: 15px; /* Thumb width */
+    height: 15px; /* Thumb height */
+    background: #007bff; /* Blue thumb color */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Firefox */
+.slider::-moz-range-track {
+    height: 3px; /* Thin track */
+    background: #e0e0e0; /* Light gray track color */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+.slider::-moz-range-thumb {
+    width: 15px; /* Thumb width */
+    height: 15px; /* Thumb height */
+    background: #007bff; /* Blue thumb color */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.slider::-moz-range-thumb:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
