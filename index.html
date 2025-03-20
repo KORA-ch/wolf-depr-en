@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Iframe Height</title>
+    <title>Graph Links</title>
     <style>
         body {
             font-family: 'Baskerville', 'Times New Roman', serif;
@@ -23,32 +23,28 @@
             text-decoration: underline;
         }
         iframe {
-            width: 100%;
-            border: none;
-            margin-top: 20px;
+            width: 100%; /* Adjust the width as needed */
+            height: 800px; /* Adjust the height as needed */
+            border: none; /* Removes the default frame border */
+            margin-top: 20px; /* Adds some space above the iframe */
         }
     </style>
 </head>
 <body>
+    <!-- <h1>number of wolves / wolf depredations per wolf</h1> -->
     <div class="link-container">
-        <a onclick="changeIframeSrc('https://kora-ch.github.io/wolf-depr-en/graph_en.html')">Graph</a>
-        <a onclick="changeIframeSrc('infograph.html')">Slider</a>
+        <!-- <a href="graph_de.html">DE</a> -->
+        <!-- <a href="graph_fr.html">FR</a> -->
+        <!-- <a href="graph_it.html">IT</a> -->
+        <a onclick="changeIframeSrc('https://kora-ch.github.io/wolf-depr-en/graph_en.html')">graph</a>
+        <a onclick="changeIframeSrc('infograph.html')">slider</a>
     </div>
     <iframe id="contentFrame" src="https://kora-ch.github.io/wolf-depr-en/graph_en.html"></iframe>
 
     <script>
         function changeIframeSrc(url) {
-            var iframe = document.getElementById('contentFrame');
-            iframe.src = url;
+            document.getElementById('contentFrame').src = url;
         }
-
-        window.addEventListener('message', function(event) {
-            console.log('Received height:', event.data);
-            if (event.origin !== 'https://kora-ch.github.io') return;
-
-            var iframe = document.getElementById('contentFrame');
-            iframe.style.height = event.data + 'px';
-        });
     </script>
 </body>
 </html>
