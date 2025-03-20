@@ -55,10 +55,10 @@ body {
     appearance: none; /* Standard syntax */
     width: 15px; /* Thumb width */
     height: 15px; /* Thumb height */
-    background: #007bff; /* Blue thumb color */
+    background: #e0e0e0; /* Blue thumb color */
     border-radius: 50%; /* Circular thumb */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: background 0.3s ease; /* Smooth background transition */
+    transition: background 0s ease; /* Smooth background transition */
 }
 
 .slider::-webkit-slider-thumb:hover {
@@ -75,10 +75,10 @@ body {
 .slider::-moz-range-thumb {
     width: 15px; /* Thumb width */
     height: 15px; /* Thumb height */
-    background: #007bff; /* Blue thumb color */
+    background: #e0e0e0; /* Blue thumb color */
     border-radius: 50%; /* Circular thumb */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: background 0.3s ease; /* Smooth background transition */
+    transition: background 0s ease; /* Smooth background transition */
 }
 
 .slider::-moz-range-thumb:hover {
