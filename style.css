@@ -10,8 +10,12 @@ body {
 
 .content-container {
     text-align: center;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 800px; /* Maximum width for the container */
+    width: 60%; /* Reduced width for a more compact layout */
+    max-width: 600px; /* Reduced maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: white; /* Optional: Background color for contrast */
+    border-radius: 8px; /* Optional: Rounds the corners */
 }
 
 #imageDisplay {
@@ -28,7 +32,7 @@ body {
 }
 
 .slider {
-    width: 10%; /* Adjust the width of the slider */
+    width: 60%; /* Adjust the width of the slider to fit better */
 }
 
 .year-display {
