@@ -6,7 +6,7 @@
     <title>Graph Links</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Baskerville', 'Times New Roman', serif;
             margin: 40px;
             text-align: center;
         }
@@ -17,6 +17,7 @@
             text-decoration: none;
             color: blue;
             margin: 10px;
+            cursor: pointer;
         }
         a:hover {
             text-decoration: underline;
@@ -35,9 +36,15 @@
         <!-- <a href="graph_de.html">DE</a> -->
         <!-- <a href="graph_fr.html">FR</a> -->
         <!-- <a href="graph_it.html">IT</a> -->
-        <a href="graph_en.html">graph</a>
-        <a href="infograph.html">slider</a>
+        <a onclick="changeIframeSrc('https://kora-ch.github.io/wolf-depr-en/graph_en.html')">graph</a>
+        <a onclick="changeIframeSrc('infograph.html')">slider</a>
     </div>
-    <iframe src="https://kora-ch.github.io/wolf-depr-en/graph_en.html"></iframe>
+    <iframe id="contentFrame" src="https://kora-ch.github.io/wolf-depr-en/graph_en.html"></iframe>
+
+    <script>
+        function changeIframeSrc(url) {
+            document.getElementById('contentFrame').src = url;
+        }
+    </script>
 </body>
 </html>
