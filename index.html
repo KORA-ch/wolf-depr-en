@@ -43,7 +43,7 @@
         }
 
         window.addEventListener('message', function(event) {
-            // Ensure the message is from the expected origin
+            console.log('Received height:', event.data);
             if (event.origin !== 'https://kora-ch.github.io') return;
 
             var iframe = document.getElementById('contentFrame');
